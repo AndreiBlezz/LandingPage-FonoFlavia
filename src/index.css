@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bordo-50: #fdf5f6;
+  --color-bordo-100: #f9e8eb;
+  --color-bordo-200: #f3cbd2;
+  --color-bordo-600: #9d2242;
+  --color-bordo-700: #841b37;
+  --color-bordo-800: #6b1428;
+  --color-bordo-900: #4a0f1d;
+  --color-bordo-950: #2d0710;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #2b2325;
+    background-color: #fdfbfb;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+.bg-bordo-900 { background-color: #4a0f1d !important; }
+.bg-bordo-800 { background-color: #6b1428 !important; }
+.bg-bordo-700 { background-color: #841b37 !important; }
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s infinite ease-in-out;
+}
