@@ -22,4 +22,5 @@ Run `cmd /c npm run dev -- --port 5175` to start Vite on port 5175.
 - **Tailwind v4 Theme Tokens**: Declare all custom brand colors in `@theme` in `src/index.css` (or use explicit hex `bg-[#4a0f1d]`). Never use un-mapped utility classes.
 - **Image Text Contrast**: Text overlay on images must have explicit dark gradient overlays (`bg-black/60`) ensuring WCAG 4.5:1 contrast.
 - **Media Sanitization**: Real photos must be clean, cropped, and presented without raw UI prints or technical labels.
+- **GitHub Pages Deploy Protocol**: Publish root `dist/*` files with `.nojekyll` to `gh-pages` branch. Verify HTTP Status `200 OK` for both `index.html` and the JS bundle referenced inside it before handoff.
 - **Build Verification**: Always verify compiled CSS via `npm run build` before deployment.
